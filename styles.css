@@ -221,8 +221,7 @@ img {
   font-weight: 700;
 }
 
-.balance-bar,
-.vote-bar {
+.balance-bar {
   display: flex;
   height: 12px;
   overflow: hidden;
@@ -230,13 +229,11 @@ img {
   background: #1d2737;
 }
 
-.balance-bar__16,
-.vote-bar__16 {
+.balance-bar__16 {
   background: linear-gradient(90deg, #ff8159, var(--orange));
 }
 
-.balance-bar__48,
-.vote-bar__48 {
+.balance-bar__48 {
   background: linear-gradient(90deg, var(--blue), var(--cyan));
 }
 
@@ -360,33 +357,6 @@ img {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 0.82rem;
-}
-
-.win-badge {
-  flex: 0 0 auto;
-  padding: 9px 13px;
-  border: 1px solid rgba(85,214,232,.28);
-  border-radius: 999px;
-  background: rgba(85,214,232,.08);
-  color: var(--cyan);
-  font-size: 0.82rem;
-  font-weight: 750;
-}
-
-.vote-summary {
-  padding: 18px 26px 0;
-}
-
-.vote-summary__labels {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  color: #dbe3ee;
-  font-size: 0.83rem;
-}
-
-.vote-bar {
-  height: 9px;
 }
 
 .spectrogram-grid {
@@ -525,9 +495,5 @@ footer {
   .comparison-card__header {
     align-items: flex-start;
     flex-wrap: wrap;
-  }
-
-  .win-badge {
-    margin-left: 72px;
   }
 }

@@ -172,26 +172,14 @@ function renderComparisons(data) {
   const cards = data.topComparisons.map((item) => {
     const card = document.createElement("article");
     card.className = "comparison-card";
-    const rate16 = 100 - item.rate48k;
     card.innerHTML = `
       <header class="comparison-card__header">
         <div class="rank">#${item.rank}</div>
         <div class="comparison-card__title">
           <h3>${item.fileid}</h3>
-          <p>问卷第 ${item.question} 题 · 共 ${item.total} 次投票</p>
+          <p>问卷第 ${item.question} 题</p>
         </div>
-        <span class="win-badge">16k ${item.wins16k} · ${item.wins48k} 48k</span>
       </header>
-      <div class="vote-summary">
-        <div class="vote-summary__labels">
-          <span>16k · ${item.wins16k} 票</span>
-          <span>48k · ${item.wins48k} 票</span>
-        </div>
-        <div class="vote-bar">
-          <span class="vote-bar__16" style="width:${rate16}%"></span>
-          <span class="vote-bar__48" style="width:${item.rate48k}%"></span>
-        </div>
-      </div>
     `;
     const grid = document.createElement("div");
     grid.className = "spectrogram-grid";
