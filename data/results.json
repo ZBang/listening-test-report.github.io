@@ -1,0 +1,1146 @@
+{
+  "meta": {
+    "surveyId": 35,
+    "surveyGroup": "pairwise",
+    "surveyName": "demo",
+    "generatedAt": "2026-07-11T18:38:04.750101+00:00",
+    "participants": 10,
+    "audioGroups": 100
+  },
+  "overall": {
+    "totalVotes": 1000,
+    "wins16k": 452,
+    "wins48k": 548,
+    "rate16k": 45.2,
+    "rate48k": 54.8
+  },
+  "series": [
+    {
+      "page": 0,
+      "question": 1,
+      "fileid": "fileid_703.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 1,
+      "question": 2,
+      "fileid": "fileid_838.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 2,
+      "question": 3,
+      "fileid": "fileid_763.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 3,
+      "question": 4,
+      "fileid": "fileid_45.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 4,
+      "question": 5,
+      "fileid": "fileid_569.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 5,
+      "question": 6,
+      "fileid": "fileid_489.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 6,
+      "question": 7,
+      "fileid": "fileid_959.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 7,
+      "question": 8,
+      "fileid": "fileid_940.wav",
+      "wins16k": 8,
+      "wins48k": 2,
+      "total": 10,
+      "rate48k": 20.0,
+      "margin48k": -6
+    },
+    {
+      "page": 8,
+      "question": 9,
+      "fileid": "fileid_862.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 9,
+      "question": 10,
+      "fileid": "fileid_441.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 10,
+      "question": 11,
+      "fileid": "fileid_28.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 11,
+      "question": 12,
+      "fileid": "fileid_497.wav",
+      "wins16k": 8,
+      "wins48k": 2,
+      "total": 10,
+      "rate48k": 20.0,
+      "margin48k": -6
+    },
+    {
+      "page": 12,
+      "question": 13,
+      "fileid": "fileid_157.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 13,
+      "question": 14,
+      "fileid": "fileid_884.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 14,
+      "question": 15,
+      "fileid": "fileid_117.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 15,
+      "question": 16,
+      "fileid": "fileid_399.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 16,
+      "question": 17,
+      "fileid": "fileid_354.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 17,
+      "question": 18,
+      "fileid": "fileid_274.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 18,
+      "question": 19,
+      "fileid": "fileid_881.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 19,
+      "question": 20,
+      "fileid": "fileid_603.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 20,
+      "question": 21,
+      "fileid": "fileid_792.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 21,
+      "question": 22,
+      "fileid": "fileid_364.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 22,
+      "question": 23,
+      "fileid": "fileid_987.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 23,
+      "question": 24,
+      "fileid": "fileid_520.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 24,
+      "question": 25,
+      "fileid": "fileid_118.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 25,
+      "question": 26,
+      "fileid": "fileid_176.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 26,
+      "question": 27,
+      "fileid": "fileid_671.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 27,
+      "question": 28,
+      "fileid": "fileid_692.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 28,
+      "question": 29,
+      "fileid": "fileid_104.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 29,
+      "question": 30,
+      "fileid": "fileid_828.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 30,
+      "question": 31,
+      "fileid": "fileid_336.wav",
+      "wins16k": 9,
+      "wins48k": 1,
+      "total": 10,
+      "rate48k": 10.0,
+      "margin48k": -8
+    },
+    {
+      "page": 31,
+      "question": 32,
+      "fileid": "fileid_622.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 32,
+      "question": 33,
+      "fileid": "fileid_271.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 33,
+      "question": 34,
+      "fileid": "fileid_986.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 34,
+      "question": 35,
+      "fileid": "fileid_504.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 35,
+      "question": 36,
+      "fileid": "fileid_21.wav",
+      "wins16k": 0,
+      "wins48k": 10,
+      "total": 10,
+      "rate48k": 100.0,
+      "margin48k": 10
+    },
+    {
+      "page": 36,
+      "question": 37,
+      "fileid": "fileid_576.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 37,
+      "question": 38,
+      "fileid": "fileid_915.wav",
+      "wins16k": 9,
+      "wins48k": 1,
+      "total": 10,
+      "rate48k": 10.0,
+      "margin48k": -8
+    },
+    {
+      "page": 38,
+      "question": 39,
+      "fileid": "fileid_861.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 39,
+      "question": 40,
+      "fileid": "fileid_463.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 40,
+      "question": 41,
+      "fileid": "fileid_68.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 41,
+      "question": 42,
+      "fileid": "fileid_394.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 42,
+      "question": 43,
+      "fileid": "fileid_822.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 43,
+      "question": 44,
+      "fileid": "fileid_475.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 44,
+      "question": 45,
+      "fileid": "fileid_916.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 45,
+      "question": 46,
+      "fileid": "fileid_809.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 46,
+      "question": 47,
+      "fileid": "fileid_181.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 47,
+      "question": 48,
+      "fileid": "fileid_586.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 48,
+      "question": 49,
+      "fileid": "fileid_32.wav",
+      "wins16k": 9,
+      "wins48k": 1,
+      "total": 10,
+      "rate48k": 10.0,
+      "margin48k": -8
+    },
+    {
+      "page": 49,
+      "question": 50,
+      "fileid": "fileid_251.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 50,
+      "question": 51,
+      "fileid": "fileid_658.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 51,
+      "question": 52,
+      "fileid": "fileid_669.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 52,
+      "question": 53,
+      "fileid": "fileid_846.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 53,
+      "question": 54,
+      "fileid": "fileid_760.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 54,
+      "question": 55,
+      "fileid": "fileid_723.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 55,
+      "question": 56,
+      "fileid": "fileid_324.wav",
+      "wins16k": 8,
+      "wins48k": 2,
+      "total": 10,
+      "rate48k": 20.0,
+      "margin48k": -6
+    },
+    {
+      "page": 56,
+      "question": 57,
+      "fileid": "fileid_429.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 57,
+      "question": 58,
+      "fileid": "fileid_995.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 58,
+      "question": 59,
+      "fileid": "fileid_952.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 59,
+      "question": 60,
+      "fileid": "fileid_913.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 60,
+      "question": 61,
+      "fileid": "fileid_310.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 61,
+      "question": 62,
+      "fileid": "fileid_893.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 62,
+      "question": 63,
+      "fileid": "fileid_537.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 63,
+      "question": 64,
+      "fileid": "fileid_605.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 64,
+      "question": 65,
+      "fileid": "fileid_630.wav",
+      "wins16k": 9,
+      "wins48k": 1,
+      "total": 10,
+      "rate48k": 10.0,
+      "margin48k": -8
+    },
+    {
+      "page": 65,
+      "question": 66,
+      "fileid": "fileid_558.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 66,
+      "question": 67,
+      "fileid": "fileid_555.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 67,
+      "question": 68,
+      "fileid": "fileid_153.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 68,
+      "question": 69,
+      "fileid": "fileid_651.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 69,
+      "question": 70,
+      "fileid": "fileid_747.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 70,
+      "question": 71,
+      "fileid": "fileid_550.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 71,
+      "question": 72,
+      "fileid": "fileid_378.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 72,
+      "question": 73,
+      "fileid": "fileid_407.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 73,
+      "question": 74,
+      "fileid": "fileid_242.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 74,
+      "question": 75,
+      "fileid": "fileid_899.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 75,
+      "question": 76,
+      "fileid": "fileid_147.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 76,
+      "question": 77,
+      "fileid": "fileid_635.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 77,
+      "question": 78,
+      "fileid": "fileid_199.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 78,
+      "question": 79,
+      "fileid": "fileid_886.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 79,
+      "question": 80,
+      "fileid": "fileid_188.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 80,
+      "question": 81,
+      "fileid": "fileid_438.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 81,
+      "question": 82,
+      "fileid": "fileid_847.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 82,
+      "question": 83,
+      "fileid": "fileid_196.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 83,
+      "question": 84,
+      "fileid": "fileid_262.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 84,
+      "question": 85,
+      "fileid": "fileid_934.wav",
+      "wins16k": 8,
+      "wins48k": 2,
+      "total": 10,
+      "rate48k": 20.0,
+      "margin48k": -6
+    },
+    {
+      "page": 85,
+      "question": 86,
+      "fileid": "fileid_968.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 86,
+      "question": 87,
+      "fileid": "fileid_641.wav",
+      "wins16k": 5,
+      "wins48k": 5,
+      "total": 10,
+      "rate48k": 50.0,
+      "margin48k": 0
+    },
+    {
+      "page": 87,
+      "question": 88,
+      "fileid": "fileid_141.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 88,
+      "question": 89,
+      "fileid": "fileid_527.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 89,
+      "question": 90,
+      "fileid": "fileid_383.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 90,
+      "question": 91,
+      "fileid": "fileid_511.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 91,
+      "question": 92,
+      "fileid": "fileid_119.wav",
+      "wins16k": 4,
+      "wins48k": 6,
+      "total": 10,
+      "rate48k": 60.0,
+      "margin48k": 2
+    },
+    {
+      "page": 92,
+      "question": 93,
+      "fileid": "fileid_854.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8
+    },
+    {
+      "page": 93,
+      "question": 94,
+      "fileid": "fileid_485.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 94,
+      "question": 95,
+      "fileid": "fileid_777.wav",
+      "wins16k": 8,
+      "wins48k": 2,
+      "total": 10,
+      "rate48k": 20.0,
+      "margin48k": -6
+    },
+    {
+      "page": 95,
+      "question": 96,
+      "fileid": "fileid_738.wav",
+      "wins16k": 2,
+      "wins48k": 8,
+      "total": 10,
+      "rate48k": 80.0,
+      "margin48k": 6
+    },
+    {
+      "page": 96,
+      "question": 97,
+      "fileid": "fileid_367.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    },
+    {
+      "page": 97,
+      "question": 98,
+      "fileid": "fileid_659.wav",
+      "wins16k": 3,
+      "wins48k": 7,
+      "total": 10,
+      "rate48k": 70.0,
+      "margin48k": 4
+    },
+    {
+      "page": 98,
+      "question": 99,
+      "fileid": "fileid_80.wav",
+      "wins16k": 7,
+      "wins48k": 3,
+      "total": 10,
+      "rate48k": 30.0,
+      "margin48k": -4
+    },
+    {
+      "page": 99,
+      "question": 100,
+      "fileid": "fileid_224.wav",
+      "wins16k": 6,
+      "wins48k": 4,
+      "total": 10,
+      "rate48k": 40.0,
+      "margin48k": -2
+    }
+  ],
+  "topComparisons": [
+    {
+      "page": 35,
+      "question": 36,
+      "fileid": "fileid_21.wav",
+      "wins16k": 0,
+      "wins48k": 10,
+      "total": 10,
+      "rate48k": 100.0,
+      "margin48k": 10,
+      "rank": 1,
+      "audio16k": "assets/audio/16k/fileid_21.wav",
+      "audio48k": "assets/audio/48k/fileid_21.wav",
+      "spectrogram16k": "assets/spectrograms/fileid_21_16k.png",
+      "spectrogram48k": "assets/spectrograms/fileid_21_48k.png",
+      "info16k": {
+        "sampleRate": 48000,
+        "duration": 12.933,
+        "peak": 0.895416
+      },
+      "info48k": {
+        "sampleRate": 48000,
+        "duration": 12.933,
+        "peak": 0.900024
+      }
+    },
+    {
+      "page": 34,
+      "question": 35,
+      "fileid": "fileid_504.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8,
+      "rank": 2,
+      "audio16k": "assets/audio/16k/fileid_504.wav",
+      "audio48k": "assets/audio/48k/fileid_504.wav",
+      "spectrogram16k": "assets/spectrograms/fileid_504_16k.png",
+      "spectrogram48k": "assets/spectrograms/fileid_504_48k.png",
+      "info16k": {
+        "sampleRate": 32000,
+        "duration": 13.31,
+        "peak": 0.901428
+      },
+      "info48k": {
+        "sampleRate": 32000,
+        "duration": 13.31,
+        "peak": 0.900055
+      }
+    },
+    {
+      "page": 47,
+      "question": 48,
+      "fileid": "fileid_586.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8,
+      "rank": 3,
+      "audio16k": "assets/audio/16k/fileid_586.wav",
+      "audio48k": "assets/audio/48k/fileid_586.wav",
+      "spectrogram16k": "assets/spectrograms/fileid_586_16k.png",
+      "spectrogram48k": "assets/spectrograms/fileid_586_48k.png",
+      "info16k": {
+        "sampleRate": 32000,
+        "duration": 13.32,
+        "peak": 0.880096
+      },
+      "info48k": {
+        "sampleRate": 32000,
+        "duration": 13.32,
+        "peak": 0.904297
+      }
+    },
+    {
+      "page": 54,
+      "question": 55,
+      "fileid": "fileid_723.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8,
+      "rank": 4,
+      "audio16k": "assets/audio/16k/fileid_723.wav",
+      "audio48k": "assets/audio/48k/fileid_723.wav",
+      "spectrogram16k": "assets/spectrograms/fileid_723_16k.png",
+      "spectrogram48k": "assets/spectrograms/fileid_723_48k.png",
+      "info16k": {
+        "sampleRate": 24000,
+        "duration": 9.6,
+        "peak": 0.883789
+      },
+      "info48k": {
+        "sampleRate": 24000,
+        "duration": 9.6,
+        "peak": 0.899994
+      }
+    },
+    {
+      "page": 80,
+      "question": 81,
+      "fileid": "fileid_438.wav",
+      "wins16k": 1,
+      "wins48k": 9,
+      "total": 10,
+      "rate48k": 90.0,
+      "margin48k": 8,
+      "rank": 5,
+      "audio16k": "assets/audio/16k/fileid_438.wav",
+      "audio48k": "assets/audio/48k/fileid_438.wav",
+      "spectrogram16k": "assets/spectrograms/fileid_438_16k.png",
+      "spectrogram48k": "assets/spectrograms/fileid_438_48k.png",
+      "info16k": {
+        "sampleRate": 32000,
+        "duration": 8.592,
+        "peak": 0.881989
+      },
+      "info48k": {
+        "sampleRate": 32000,
+        "duration": 8.592,
+        "peak": 0.902893
+      }
+    }
+  ]
+}

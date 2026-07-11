@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="16k 与 48k 音频主观偏好测试结果及语谱图对比">
+  <title>16k vs 48k · 听感评测结果</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__glow hero__glow--one"></div>
+    <div class="hero__glow hero__glow--two"></div>
+    <div class="shell hero__content">
+      <p class="eyebrow">LISTENING TEST REPORT</p>
+      <h1>16k <span>vs</span> 48k</h1>
+      <p class="hero__lead">主观听感投票统计与高优势样本语谱图对比</p>
+      <div class="hero__meta">
+        <span id="survey-name">正在载入结果…</span>
+        <span id="generated-at"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section aria-labelledby="summary-title" class="section summary-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">OVERVIEW</p>
+          <h2 id="summary-title">投票概览</h2>
+        </div>
+        <p>仅展示完成全部题目的有效问卷记录，不公开参与者邮箱。</p>
+      </div>
+      <div class="summary-grid" id="summary-grid" aria-live="polite"></div>
+      <div class="overall-balance" id="overall-balance"></div>
+    </section>
+
+    <section aria-labelledby="trend-title" class="section chart-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">VOTE DIFFERENCE</p>
+          <h2 id="trend-title">逐题票差柱状图</h2>
+        </div>
+        <p>纵轴为 48k 得票减去 16k 得票；正值偏向 48k，负值偏向 16k。</p>
+      </div>
+      <div class="legend" aria-label="图例">
+        <span><i class="legend__line legend__line--16"></i>16k 获胜</span>
+        <span><i class="legend__line legend__line--48"></i>48k 获胜</span>
+        <span><i class="legend__line legend__line--tie"></i>平票</span>
+      </div>
+      <div class="chart-card">
+        <div id="vote-chart" class="chart" role="img" aria-label="16k 与 48k 逐题票差柱状图"></div>
+        <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+      </div>
+      <p class="chart-note">柱形按票差从低到高排列；将鼠标移动到柱形上查看文件名和具体票数。</p>
+    </section>
+
+    <section aria-labelledby="comparison-title" class="section comparison-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">AUDIO COMPARISONS</p>
+          <h2 id="comparison-title">16k 与 48k 对比</h2>
+        </div>
+        <p>五组音频的语谱图与原始听感对比。</p>
+      </div>
+      <div id="comparison-list" class="comparison-list" aria-live="polite"></div>
+    </section>
+
+    <section class="section methodology" aria-labelledby="method-title">
+      <p class="section-kicker">METHODOLOGY</p>
+      <h2 id="method-title">统计与可视化说明</h2>
+      <div class="methodology__grid">
+        <p><strong>投票统计</strong>每题在 16k 与 48k 中二选一，汇总所有已完成问卷的有效记录。</p>
+        <p><strong>柱状图</strong>每根柱表示一组音频的票差，零线两侧分别代表 16k 和 48k。</p>
+        <p><strong>语谱图</strong>采用相同的 −100 至 0 dBFS 色阶，便于直接观察频带能量差异。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <p>Static report for GitHub Pages · <span id="footer-survey"></span></p>
+    </div>
+  </footer>
+
+  <noscript>此页面需要启用 JavaScript 才能加载统计数据。</noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
