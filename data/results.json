@@ -3,7 +3,7 @@
     "surveyId": 35,
     "surveyGroup": "pairwise",
     "surveyName": "demo",
-    "generatedAt": "2026-07-11T18:38:04.750101+00:00",
+    "generatedAt": "2026-07-12T07:00:29.491696+00:00",
     "participants": 10,
     "audioGroups": 100
   },
@@ -1027,10 +1027,17 @@
       "rate48k": 100.0,
       "margin48k": 10,
       "rank": 1,
+      "audioMixture": "assets/audio/mixture/fileid_21.flac",
       "audio16k": "assets/audio/16k/fileid_21.wav",
       "audio48k": "assets/audio/48k/fileid_21.wav",
+      "spectrogramMixture": "assets/spectrograms/fileid_21_mixture.png",
       "spectrogram16k": "assets/spectrograms/fileid_21_16k.png",
       "spectrogram48k": "assets/spectrograms/fileid_21_48k.png",
+      "infoMixture": {
+        "sampleRate": 48000,
+        "duration": 12.933,
+        "peak": 0.899994
+      },
       "info16k": {
         "sampleRate": 48000,
         "duration": 12.933,
@@ -1052,10 +1059,17 @@
       "rate48k": 90.0,
       "margin48k": 8,
       "rank": 2,
+      "audioMixture": "assets/audio/mixture/fileid_504.flac",
       "audio16k": "assets/audio/16k/fileid_504.wav",
       "audio48k": "assets/audio/48k/fileid_504.wav",
+      "spectrogramMixture": "assets/spectrograms/fileid_504_mixture.png",
       "spectrogram16k": "assets/spectrograms/fileid_504_16k.png",
       "spectrogram48k": "assets/spectrograms/fileid_504_48k.png",
+      "infoMixture": {
+        "sampleRate": 32000,
+        "duration": 13.31,
+        "peak": 0.899994
+      },
       "info16k": {
         "sampleRate": 32000,
         "duration": 13.31,
@@ -1077,10 +1091,17 @@
       "rate48k": 90.0,
       "margin48k": 8,
       "rank": 3,
+      "audioMixture": "assets/audio/mixture/fileid_586.flac",
       "audio16k": "assets/audio/16k/fileid_586.wav",
       "audio48k": "assets/audio/48k/fileid_586.wav",
+      "spectrogramMixture": "assets/spectrograms/fileid_586_mixture.png",
       "spectrogram16k": "assets/spectrograms/fileid_586_16k.png",
       "spectrogram48k": "assets/spectrograms/fileid_586_48k.png",
+      "infoMixture": {
+        "sampleRate": 32000,
+        "duration": 13.32,
+        "peak": 0.899994
+      },
       "info16k": {
         "sampleRate": 32000,
         "duration": 13.32,
@@ -1102,10 +1123,17 @@
       "rate48k": 90.0,
       "margin48k": 8,
       "rank": 4,
+      "audioMixture": "assets/audio/mixture/fileid_723.flac",
       "audio16k": "assets/audio/16k/fileid_723.wav",
       "audio48k": "assets/audio/48k/fileid_723.wav",
+      "spectrogramMixture": "assets/spectrograms/fileid_723_mixture.png",
       "spectrogram16k": "assets/spectrograms/fileid_723_16k.png",
       "spectrogram48k": "assets/spectrograms/fileid_723_48k.png",
+      "infoMixture": {
+        "sampleRate": 24000,
+        "duration": 9.6,
+        "peak": 0.884094
+      },
       "info16k": {
         "sampleRate": 24000,
         "duration": 9.6,
@@ -1127,10 +1155,17 @@
       "rate48k": 90.0,
       "margin48k": 8,
       "rank": 5,
+      "audioMixture": "assets/audio/mixture/fileid_438.flac",
       "audio16k": "assets/audio/16k/fileid_438.wav",
       "audio48k": "assets/audio/48k/fileid_438.wav",
+      "spectrogramMixture": "assets/spectrograms/fileid_438_mixture.png",
       "spectrogram16k": "assets/spectrograms/fileid_438_16k.png",
       "spectrogram48k": "assets/spectrograms/fileid_438_48k.png",
+      "infoMixture": {
+        "sampleRate": 32000,
+        "duration": 8.592,
+        "peak": 0.352051
+      },
       "info16k": {
         "sampleRate": 32000,
         "duration": 8.592,

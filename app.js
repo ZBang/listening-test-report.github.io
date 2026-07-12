@@ -148,19 +148,19 @@ function renderChart(series) {
   document.querySelector("#vote-chart").replaceChildren(svg);
 }
 
-function audioPanel(item, rate) {
-  const info = item[`info${rate}`];
+function audioPanel(item, key, label, modifier) {
+  const info = item[`info${key}`];
   const article = document.createElement("article");
   article.className = "audio-panel";
   article.innerHTML = `
     <div class="audio-panel__top">
-      <span class="rate-label rate-label--${rate}">${rate} condition</span>
+      <span class="rate-label rate-label--${modifier}">${label}</span>
       <span class="audio-meta">${(info.sampleRate / 1000).toFixed(0)} kHz file · ${info.duration.toFixed(2)} s</span>
     </div>
     <div class="spectrogram-frame">
-      <img src="${item[`spectrogram${rate}`]}" alt="${rate} spectrogram for ${item.fileid}" loading="lazy">
+      <img src="${item[`spectrogram${key}`]}" alt="${label} spectrogram for ${item.fileid}" loading="lazy">
     </div>
-    <audio controls preload="metadata" src="${item[`audio${rate}`]}">
+    <audio controls preload="metadata" src="${item[`audio${key}`]}">
       Your browser does not support audio playback.
     </audio>
   `;
@@ -183,7 +183,11 @@ function renderComparisons(data) {
     `;
     const grid = document.createElement("div");
     grid.className = "spectrogram-grid";
-    grid.append(audioPanel(item, "16k"), audioPanel(item, "48k"));
+    grid.append(
+      audioPanel(item, "Mixture", "Original Mixture", "mixture"),
+      audioPanel(item, "16k", "16k Condition", "16"),
+      audioPanel(item, "48k", "48k Condition", "48"),
+    );
     card.append(grid);
     return card;
   });

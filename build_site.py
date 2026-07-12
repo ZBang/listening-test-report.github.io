@@ -27,6 +27,10 @@ MOS_ROOT = SITE_ROOT.parent
 DEFAULT_VOTES = MOS_ROOT / "anyan_api/exports/pairwise_35_votes.tsv"
 DEFAULT_SURVEY = MOS_ROOT / "anyan_api/survey_data/pairwise_demo.json"
 DEFAULT_AUDIO_ROOT = MOS_ROOT / "anyan_api/survey_data"
+DEFAULT_MIXTURE_ROOT = Path(
+    "/public/home/smiip/zbang/corpus/URGENT/validation_leaderboard_with_label/"
+    "simulation_validation_leaderboard/noisy/noisy"
+)
 
 
 @dataclass
@@ -66,6 +70,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--votes", type=Path, default=DEFAULT_VOTES)
     parser.add_argument("--survey", type=Path, default=DEFAULT_SURVEY)
     parser.add_argument("--audio-root", type=Path, default=DEFAULT_AUDIO_ROOT)
+    parser.add_argument("--mixture-root", type=Path, default=DEFAULT_MIXTURE_ROOT)
     parser.add_argument("--survey-id", type=int, default=35)
     parser.add_argument("--top-k", type=int, default=5)
     return parser.parse_args()
@@ -165,7 +170,8 @@ def write_spectrogram(audio_path: Path, output_path: Path) -> dict[str, object]:
     )
     axis.set_xlabel("Time (s)")
     axis.set_ylabel("Frequency (kHz)")
-    axis.set_ylim(0, sample_rate / 2000.0)
+    axis.set_ylim(0, 24)
+    axis.set_facecolor("black")
     axis.grid(False)
     colorbar = figure.colorbar(image, ax=axis, pad=0.015)
     colorbar.set_label("Magnitude (dBFS)")
@@ -183,6 +189,7 @@ def clean_generated_assets() -> None:
     patterns = (
         SITE_ROOT / "assets/audio/16k",
         SITE_ROOT / "assets/audio/48k",
+        SITE_ROOT / "assets/audio/mixture",
         SITE_ROOT / "assets/spectrograms",
     )
     for directory in patterns:
@@ -196,7 +203,7 @@ def build() -> None:
     args = parse_args()
     if args.top_k < 1:
         raise ValueError("--top-k must be at least 1")
-    for path in (args.votes, args.survey, args.audio_root):
+    for path in (args.votes, args.survey, args.audio_root, args.mixture_root):
         if not path.exists():
             raise FileNotFoundError(path)
 
@@ -219,17 +226,27 @@ def build() -> None:
         relative_16k, relative_48k = stimuli[stats.page]
         source_16k = args.audio_root / relative_16k
         source_48k = args.audio_root / relative_48k
-        if not source_16k.is_file() or not source_48k.is_file():
+        source_mixture = args.mixture_root / Path(stats.fileid).with_suffix(".flac")
+        if (
+            not source_16k.is_file()
+            or not source_48k.is_file()
+            or not source_mixture.is_file()
+        ):
             raise FileNotFoundError(
-                f"missing audio for {stats.fileid}: {source_16k} or {source_48k}"
+                f"missing audio for {stats.fileid}: "
+                f"{source_mixture}, {source_16k}, or {source_48k}"
             )
 
+        audio_mixture = SITE_ROOT / "assets/audio/mixture" / source_mixture.name
         audio_16k = SITE_ROOT / "assets/audio/16k" / stats.fileid
         audio_48k = SITE_ROOT / "assets/audio/48k" / stats.fileid
+        spec_mixture = SITE_ROOT / "assets/spectrograms" / f"{audio_16k.stem}_mixture.png"
         spec_16k = SITE_ROOT / "assets/spectrograms" / f"{audio_16k.stem}_16k.png"
         spec_48k = SITE_ROOT / "assets/spectrograms" / f"{audio_48k.stem}_48k.png"
+        shutil.copy2(source_mixture, audio_mixture)
         shutil.copy2(source_16k, audio_16k)
         shutil.copy2(source_48k, audio_48k)
+        info_mixture = write_spectrogram(source_mixture, spec_mixture)
         info_16k = write_spectrogram(source_16k, spec_16k)
         info_48k = write_spectrogram(source_48k, spec_48k)
 
@@ -237,10 +254,13 @@ def build() -> None:
         comparison.update(
             {
                 "rank": rank,
+                "audioMixture": audio_mixture.relative_to(SITE_ROOT).as_posix(),
                 "audio16k": audio_16k.relative_to(SITE_ROOT).as_posix(),
                 "audio48k": audio_48k.relative_to(SITE_ROOT).as_posix(),
+                "spectrogramMixture": spec_mixture.relative_to(SITE_ROOT).as_posix(),
                 "spectrogram16k": spec_16k.relative_to(SITE_ROOT).as_posix(),
                 "spectrogram48k": spec_48k.relative_to(SITE_ROOT).as_posix(),
+                "infoMixture": info_mixture,
                 "info16k": info_16k,
                 "info48k": info_48k,
             }

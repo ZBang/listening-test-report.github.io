@@ -361,7 +361,7 @@ img {
 
 .spectrogram-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   margin-top: 22px;
   background: var(--line);
@@ -392,6 +392,10 @@ img {
 
 .rate-label--48 {
   color: var(--cyan);
+}
+
+.rate-label--mixture {
+  color: var(--green);
 }
 
 .audio-meta {

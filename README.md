@@ -4,8 +4,8 @@
 
 - 有效人数、总票数以及 16k/48k 总胜率；
 - 100 组样本按票差排序的柱状图；
-- 五组 16k/48k 音频对比；
-- 每组 16k/48k 语谱图和可播放音频。
+- 五组原始混叠语音、16k 和 48k 音频对比；
+- 三列统一使用 0–24 kHz 纵轴的语谱图和可播放音频。
 
 ## 重新生成数据和资源
 
@@ -21,6 +21,7 @@ python3 build_site.py
 ../anyan_api/exports/pairwise_35_votes.tsv
 ../anyan_api/survey_data/pairwise_demo.json
 ../anyan_api/survey_data/
+/public/home/smiip/zbang/corpus/URGENT/validation_leaderboard_with_label/simulation_validation_leaderboard/noisy/noisy/
 ```
 
 也可显式指定：
@@ -30,6 +31,7 @@ python3 build_site.py \
   --votes ../anyan_api/exports/pairwise_35_votes.tsv \
   --survey ../anyan_api/survey_data/pairwise_demo.json \
   --audio-root ../anyan_api/survey_data \
+  --mixture-root /public/home/smiip/zbang/corpus/URGENT/validation_leaderboard_with_label/simulation_validation_leaderboard/noisy/noisy \
   --survey-id 35 \
   --top-k 5
 ```
@@ -37,6 +39,7 @@ python3 build_site.py \
 构建脚本会重新生成：
 
 - `data/results.json`
+- `assets/audio/mixture/`
 - `assets/audio/16k/`
 - `assets/audio/48k/`
 - `assets/spectrograms/`
