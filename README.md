@@ -44,6 +44,15 @@ python3 build_site.py \
 - `assets/audio/48k/`
 - `assets/spectrograms/`
 
+仅更新投票统计、保留当前展示音频和语谱图：
+
+```bash
+cd ../anyan_api
+.venv/bin/python export_pairwise.py 35 --out-dir exports
+cd ../github
+python3 build_site.py --stats-only
+```
+
 ## 本地预览
 
 浏览器直接打开 `index.html` 时可能因 `file://` 限制无法读取 JSON，应启动静态服务器：

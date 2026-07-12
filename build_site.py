@@ -73,6 +73,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--mixture-root", type=Path, default=DEFAULT_MIXTURE_ROOT)
     parser.add_argument("--survey-id", type=int, default=35)
     parser.add_argument("--top-k", type=int, default=5)
+    parser.add_argument(
+        "--stats-only",
+        action="store_true",
+        help="update voting statistics while preserving existing comparison assets",
+    )
     return parser.parse_args()
 
 
@@ -203,7 +208,10 @@ def build() -> None:
     args = parse_args()
     if args.top_k < 1:
         raise ValueError("--top-k must be at least 1")
-    for path in (args.votes, args.survey, args.audio_root, args.mixture_root):
+    required_paths = [args.votes, args.survey]
+    if not args.stats_only:
+        required_paths.extend([args.audio_root, args.mixture_root])
+    for path in required_paths:
         if not path.exists():
             raise FileNotFoundError(path)
 
@@ -211,6 +219,47 @@ def build() -> None:
     stimuli, survey_metadata = load_stimuli(args.survey)
     if not series:
         raise ValueError("no votes found")
+
+    if args.stats_only:
+        output = SITE_ROOT / "data/results.json"
+        if not output.is_file():
+            raise FileNotFoundError(
+                f"{output} is required for --stats-only so comparisons can be preserved"
+            )
+        previous = json.loads(output.read_text(encoding="utf-8"))
+        comparisons = previous.get("topComparisons")
+        if not isinstance(comparisons, list) or not comparisons:
+            raise ValueError(f"{output} does not contain existing topComparisons")
+        wins_16k = sum(item.wins_16k for item in series)
+        wins_48k = sum(item.wins_48k for item in series)
+        total_votes = wins_16k + wins_48k
+        result = {
+            "meta": {
+                "surveyId": args.survey_id,
+                **survey_metadata,
+                "generatedAt": datetime.now(timezone.utc).isoformat(),
+                "participants": len(participants),
+                "audioGroups": len(series),
+            },
+            "overall": {
+                "totalVotes": total_votes,
+                "wins16k": wins_16k,
+                "wins48k": wins_48k,
+                "rate16k": round(wins_16k / total_votes * 100, 1),
+                "rate48k": round(wins_48k / total_votes * 100, 1),
+            },
+            "series": [item.as_dict() for item in series],
+            "topComparisons": comparisons,
+        }
+        output.write_text(
+            json.dumps(result, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(
+            f"Updated statistics in {output}: {len(participants)} participants, "
+            f"{total_votes} votes; comparison assets preserved"
+        )
+        return
 
     ranked = sorted(
         series,
